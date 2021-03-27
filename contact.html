@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tom Kimberlin</title>
+    <title>Contact - Tom Kimberlin</title>
     <meta content="Web developer, graphic designer, and technology enthusiast." name="description">
     <meta content="#301934" name="theme-color">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -17,21 +17,27 @@
   <body>
     <main>
       <header>
-        <h1>Tom Kimberlin</h1>
+        <h1>Contact</h1>
       </header>
-      <nav>
-        <ul>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="https://github.com/tomkimberlin">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/tomkimberlindev/">LinkedIn</a>
-          </li>
-        </ul>
-      </nav>
+      <section>
+        <form data-netlify="true" method="POST" name="contact">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" required type="text">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" required type="email">
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5"></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
